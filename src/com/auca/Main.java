@@ -3,6 +3,7 @@ package com.auca;
 
 import com.auca.interfaces.Identifiable;
 import com.auca.abstracts.Person;
+import com.auca.SmartRegistrationForm;
 
 import com.auca.student.Student;
 import com.auca.teacher.Teacher;
@@ -28,6 +29,8 @@ import java.util.Scanner;
 public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
+
+    private static final SmartRegistrationForm SmartForm = new SmartRegistrationForm(scanner);
 
     // Lists for storing application records
     private static final List<Department> departments = new ArrayList<>();
